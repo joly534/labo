@@ -13,17 +13,9 @@
 
 
 
-      
-      <a-entity laser-controls="hand: left"  raycaster="lineColor: red; lineOpacity: 1"></a-entity>
-      <a-entity laser-controls="hand: right" raycaster="lineColor: red; lineOpacity: 1"></a-entity>
-      
-      
-      <a-entity  
-        oculus-touch-controls="hand: left" roughness="0.8">
-      </a-entity>
-      <a-entity 
-        oculus-touch-controls="hand: right" roughness="0.8">
-      </a-entity>
+      <a-entity position="0 1.6 0" camera look-controls wasd-controls></a-entity>
+      <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: [mixin='box']"></a-entity>
+      <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: [mixin='box']" line="color: #118A7E"></a-entity>
     </a-scene>
   </body>
 </html>
