@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.1/dist/aframe-physics-system.js"></script>
-    <script src="https://unpkg.com/super-hands@^3.0.1/dist/super-hands.min.js"></script>
-    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
     <title>Laboratoire</title>
 </head>
 <body>
-    <a-scene>
+    <a-scene color="black">
         <a-entity laser-controls="hand: left"  raycaster="lineColor: red; lineOpacity: 1;far:3"></a-entity>
       <a-entity laser-controls="hand: right" raycaster="lineColor: red; lineOpacity: 1;far:3"></a-entity>
       
@@ -24,6 +20,8 @@
       <a-entity 
         oculus-touch-controls="hand: right" roughness="0.8">
       </a-entity>
+
+      <a-light color="red" position="-1 1 0"></a-light>
     </a-scene>
 </body>
 </html>
